@@ -1,0 +1,70 @@
+nombre: Variedades Heucar, venta de artículos escolares y quincallería
+-categorias: codigo, nombre
+-historial:código, cod_usuario, fecha, descripción
+-distrito: código, nombre
+-clientes:código, cod_usuario, cod_distrito,latitud, longitud, nombres, apellidos,
+dni o ce
+-encabezado_carrito:código, cod_cliente, estado, fecha_solicitud, 
+fecha_confirmación, fecha_entrega
+-tipo_usuarios:código, nombres
+-usuarios:código, cod_tipo, login, clave
+-productos:código, nombre, stock, estado, precio_venta, descripción*
+-metodos_pago:código, nombre
+-detalles:codigo,cod_encabezado,cod_producto,cantidad,precio_venta PENDIENTE
+
+frmManProducto: falta insertar, modificar y eliminar.
+frmManCategorias: 
+frmManClientes:
+frmManDistrito:
+frmManMetodoPago:
+frmSegTipoUsuarios:
+frmSegUsuario:
+frmRegCarrito:
+frmRepHistorial:
+frmRepVentas:
+frmRepProductos:
+frmSegLogin:
+
+providers va dentro de infraescrtura
+
+Requerimientos negocio
+
+Funcionales
+
+RNRF00-El sistema registra los productos a vender
+RNRF01-El sistema recepciona de manera online el pedido del cliente 
+RNRF02-El sistema registra los datos del cliente
+RNRF03-El sistema registra los datos de los usuarios
+RNRF04-Se permitirá la compra máxima de 3 productos de un mismo tipo, 
+máximo de compra sin restricciones
+RNRF05-Al realizar la compra el estado de compra es pendiente de confirmación
+RNRF06-Al aprobar una compra el estado de compra cambia a fecha de entrega
+RNRF07-El sistema muestra si el pedido ya fue retirado por el cliente
+RNRF08-El sistema captura la ubicación desde donde se hizo la compra
+RNRF09-El sistema permite a los usuarios tipo_admin, controlar los datos del sistema,
+realizar cambios, configuraciones,eliminaciones
+RNRF10-El sistema permitirá realizar compras solo a usuarios registrados
+RNRF11-El sistema mostrará una notificación luego del login en caso de estar un pedido
+pendiente de retirar
+RNRF12-El sistema permitirá la devolución de productos con defectos de fábrica,
+previa comprobación y un máximo de 3 días efectuada la compra.
+
+Requerimientos no funcionales
+
+RNRNF01-La disponibilidad del sistema debe ser continua con un nivel 
+de servicio para los usuarios de 7 días por 24 horas, deberá contar 
+con sistema de alarma cuando el sitio este caído
+RNRNF02-El tiempo de respuesta del sistema entre pantallas es de 5seg
+RNRNF03-El sistema funcionará bajo la plataforma IOS y Android
+RNRNF04-El sistema presentara una interfaz de usuario sencilla 
+para que sea de fácil manejo para los usuarios del sistemas
+RNRNF05-La aplicación debe adaptarse a diferentes resoluciones de pantalla
+RNRNF06-El sistema se debe desarrollar para funcionar en diferentes plataformas
+RNRNF07-El sistema debe llevar un control de errores y registros indebidos al sistema
+RNRNF08-El sistema deberá estar alojado en un servidor eficiente que pueda manejar gran
+ concurrencia de usuario en ciertos en ciertos periodos de tiempo
+RNRNF09-El acceso a los datos debe ser de forma segura
+RNRNF10-El sistema deberá ser fácilmente escalable, con el fin de poder hacer crecer 
+la aplicación al incorporar a futuro nuevos funcionalidades
+RNRNF11-El sistema debe disponer de una buena documentación que permita realizar
+operaciones de mantenimiento con el menor esfuerzo posible
